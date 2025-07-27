@@ -35,23 +35,16 @@ This project analyzes and predicts student performance using R. It uses the *Stu
 
 ---
 
-## 📊 Sample Visualizations
+📊 Sample Visualizations
+Visualization	Description
+	Performance Category Bar Plot
+	Scatter Plot - Actual vs Predicted Math Scores
+	Pie Chart - Gender Distribution
+	Histogram - Residuals
+	Scatter Plot - Reading vs Writing by Gender
+	Stacked Bar Plot - Lunch Type vs Performance
+	Horizontal Bar Plot - Race vs Performance
 
-> Add screenshots from your output in these sections:
-
-- 📈 Bar plot - performance category <img width="491" height="470" alt="Screenshot 2025-07-27 222735" src="https://github.com/user-attachments/assets/c7445a54-dab2-4a89-aff8-de7c9bf3feb8" />
-
-- 📦  Scatter plot - actual vs predicted <img width="501" height="471" alt="actualvsprediction" src="https://github.com/user-attachments/assets/db5c02be-57f6-425a-a659-ee2167a58c17" />
-
-- 🧭 Pie chart - gender distribution <img width="884" height="720" alt="genderdistribution" src="https://github.com/user-attachments/assets/234cfe0a-4d46-43d7-b9da-f65a21b6a1cf" />
-
-- 📉 Histogram - residuals <img width="502" height="475" alt="Screenshot " src="https://github.com/user-attachments/assets/11ba02e8-f8a9-4443-88ff-1d6a601e1715" />
-
-- 🔵Scatter plot - reading vs writing by gender<img width="840" height="721" alt="scatterplot" src="https://github.com/user-attachments/assets/db43c413-fcd0-4b8f-9454-757a8d473b64" />
-
-- 🟨 Stacked bar - lunch vs performance <img width="883" height="711" alt="lunchvsperformance" src="https://github.com/user-attachments/assets/183b98fa-33f7-43a3-b113-46bfa49b09f1" />
-
-- 🟨 Horizontal bar - race vs performance <img width="884" height="720" alt="horizontalbargraph" src="https://github.com/user-attachments/assets/6ccaa21e-ccb9-422d-a641-c472368d4580" />
 
 ## 🚀 How to Run
 
