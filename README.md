@@ -4,6 +4,10 @@ This project analyzes and predicts student performance using R. It uses the *Stu
 
 ---
 
+## 🎯 Objective
+To predict students' math scores using attributes like gender, race/ethnicity, parental level of            education, lunch type, and test preparation course and also to identify those who are under performance and need help.
+
+
 ## 📁 Files
 
 - StudentsPerformance.csv — Dataset from Kaggle.
@@ -12,26 +16,37 @@ This project analyzes and predicts student performance using R. It uses the *Stu
 
 ---
 
-## 🎯 Project Objectives
 
-- Load and preprocess the dataset.
-- Perform Exploratory Data Analysis (EDA).
-- Visualize patterns and insights across gender, parental education, and preparation.
-- Build predictive models:
-  - **Linear Regression**
-  - **Decision Tree**
-  - **Random Forest**
-- Evaluate models using RMSE and R-squared metrics.
+## 🧪 Methodology
+1. **Data Preprocessing**
+   - Converted categorical variables to factors.
+   - Checked for missing values.
+   - Split data into training and testing sets.
+
+2. **Model Building**
+   - Built three models: 
+     - Linear Regression
+     - Decision Tree
+     - Random Forest
+
+3. **Evaluation Metrics**
+   - Used RMSE (Root Mean Squared Error)
+   - R² (R-squared) value
+
+4. **Visualization**
+   - Bar chart comparison of model performances.
+
 - Identify underperforming students and those who may need help.
 - Plot actual vs predicted scores and analyze residuals.
 
 ---
 
-## 📌 Technologies Used
 
-- *Language:* R
-- *Libraries:*  
-  tidyverse, caret, ggplot2, corrplot, dplyr, reshape2, Metrics, rpart, randomForest
+## 🔧 Technologies Used
+- **Programming Language**: R
+- **Libraries**: ggplot2, rpart, randomForest, Metrics
+- **IDE**: RStudio
+- **Version Control**: Git and GitHub
 
 ---
 
@@ -42,6 +57,12 @@ This project analyzes and predicts student performance using R. It uses the *Stu
 | Linear Regression| 5.88   | 0.87      |
 | Decision Tree     | 7.78   | 0.74      |
 | Random Forest     | 6.46   | 0.82      |
+
+🎉 **Linear Regression** performed the best based on both RMSE and R².
+
+
+ ## 📊 Bar Chart Comparison
+A bar chart was created using `ggplot2` to visually compare the RMSE and R² values for each model.
 
 ---
 
@@ -72,9 +93,12 @@ R² Comparison - Bar Plot<img width="891" height="714" alt="R2" src="https://git
 
 [Students Performance Dataset on Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
----
-
----
+## 🗃️ Repository Structure
+```
+📁 StudentPerformancePrediction/
+├── modeling.R
+├── README.md
+```
 
 ## 💡 Challenges Faced & What I Learned
 
@@ -83,6 +107,7 @@ R² Comparison - Bar Plot<img width="891" height="714" alt="R2" src="https://git
 - Learned how to visualize data effectively using `ggplot2`.
 - Faced difficulty resolving GitHub merge conflicts and learned version control through practice.
 - Understood the importance of model evaluation metrics like RMSE and R².
+
 
 
 ## 🙋‍♀️ Author
