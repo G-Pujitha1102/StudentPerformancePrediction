@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +6,131 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Student Performance Prediction - Project</title>
 <link rel="stylesheet" href="style.css" />
+<style>
+  /* Sticky navbar styles */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+  }
+  header, section {
+    padding: 20px;
+    margin: auto;
+    max-width: 900px;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  nav {
+    background: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background: #555;
+    outline: none;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #444;
+    color: white;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .gallery figure {
+    background: #eee;
+    padding: 10px;
+    margin: 0;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    font-size: 0.9em;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
 </head>
 <body>
+
+<nav>
+  <ul>
+    <li><a href="#objective">Objective</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#methodology">Methodology</a></li>
+    <li><a href="#technologies">Technologies Used</a></li>
+    <li><a href="#performance">Model Performance</a></li>
+    <li><a href="#visualizations">Visualizations</a></li>
+    <li><a href="#run">How to Run</a></li>
+    <li><a href="#dataset">Dataset Source</a></li>
+    <li><a href="#structure">Repository Structure</a></li>
+    <li><a href="#challenges">Challenges</a></li>
+    <li><a href="#author">Author</a></li>
+    <li><a href="#future">Future Improvements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 <header>
   <h1>🎓 Student Performance Prediction 📊</h1>
   <p>This project analyzes and predicts student performance using R. It uses the <em>Students Performance Dataset</em> to explore various factors influencing student scores, visualize trends, build predictive models, and identify students who may need help.</p>
 </header>
 
-<section>
+<section id="objective">
   <h2>🎯 Objective</h2>
   <p>To predict students' math scores using attributes like gender, race/ethnicity, parental level of education, lunch type, and test preparation course and also to identify those who are underperforming and need help.</p>
 </section>
 
-<section>
+<section id="files">
   <h2>📁 Files</h2>
   <ul>
     <li><strong>StudentsPerformance.csv</strong> — Dataset from Kaggle.</li>
@@ -27,7 +139,7 @@
   </ul>
 </section>
 
-<section>
+<section id="methodology">
   <h2>🧪 Methodology</h2>
   <ol>
     <li><strong>Data Preprocessing</strong>
@@ -58,7 +170,7 @@
   </ol>
 </section>
 
-<section>
+<section id="technologies">
   <h2>🔧 Technologies Used</h2>
   <ul>
     <li><strong>Programming Language:</strong> R</li>
@@ -68,7 +180,7 @@
   </ul>
 </section>
 
-<section>
+<section id="performance">
   <h2>📊 Model Performance Comparison</h2>
   <table>
     <thead>
@@ -87,7 +199,7 @@
   <img src="images/r2_comparison.png" alt="R-squared Comparison Bar Chart" />
 </section>
 
-<section>
+<section id="visualizations">
   <h2>📊 Sample Visualizations</h2>
   <div class="gallery">
     <figure>
@@ -119,17 +231,17 @@
       <figcaption>Horizontal Bar Plot - Race vs Performance</figcaption>
     </figure>
     <figure>
-      <img width="898" height="715" alt="RMSE Comparison" src="https://github.com/user-attachments/assets/da62e37a-7f3b-4573-8cfe-cf4dabbd7ad1" />
+      <img width="898" height="715" alt="RMSE Comparison Bar Plot" src="https://github.com/user-attachments/assets/da62e37a-7f3b-4573-8cfe-cf4dabbd7ad1" />
       <figcaption>RMSE Comparison - Bar Plot</figcaption>
     </figure>
     <figure>
-      <img width="891" height="714" alt="R-squared Comparison" src="https://github.com/user-attachments/assets/310b8445-2ccd-43c7-9095-582b04ced935" />
+      <img width="891" height="714" alt="R² Comparison Bar Plot" src="https://github.com/user-attachments/assets/310b8445-2ccd-43c7-9095-582b04ced935" />
       <figcaption>R² Comparison - Bar Plot</figcaption>
     </figure>
   </div>
 </section>
 
-<section>
+<section id="run">
   <h2>🚀 How to Run</h2>
   <ol>
     <li>Clone the repo:<br /><code>git clone https://github.com/G-Pujitha1102/StudentPerformancePrediction.git</code></li>
@@ -138,12 +250,12 @@
   </ol>
 </section>
 
-<section>
+<section id="dataset">
   <h2>📎 Dataset Source</h2>
   <p><a href="https://www.kaggle.com/datasets/spscientist/students-performance-in-exams" target="_blank" rel="noopener noreferrer">Students Performance Dataset on Kaggle</a></p>
 </section>
 
-<section>
+<section id="structure">
   <h2>🗃️ Repository Structure</h2>
   <pre>
 📁 StudentPerformancePrediction/
@@ -152,8 +264,8 @@
   </pre>
 </section>
 
-<section>
-  <h2>💡 Challenges Faced & What I Learned</h2>
+<section id="challenges">
+  <h2>💡 Challenges Faced &amp; What I Learned</h2>
   <ul>
     <li>Handling missing or inconsistent data in R.</li>
     <li>Understanding how different factors (gender, lunch, education) impact scores.</li>
@@ -163,18 +275,28 @@
   </ul>
 </section>
 
-<section>
+<section id="author">
   <h2>🙋‍♀️ Author</h2>
   <p><strong>G. Pujitha</strong><br />🎓 B.Tech - Computer Science Engineering<br /><a href="https://github.com/G-Pujitha1102" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
 </section>
 
-<section>
+<section id="future">
   <h2>🔮 Future Improvements</h2>
   <ul>
     <li>Add interactive dashboard using R Shiny.</li>
     <li>Explore classification models (Pass/Fail).</li>
     <li>Add more advanced models like Gradient Boosting.</li>
     <li>Expand analysis to writing and reading score predictions.</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>📬 Contact</h2>
+  <p>If you'd like to connect, feel free to reach out via:</p>
+  <ul>
+    <li><a href="mailto:your-email@example.com">Email</a></li>
+    <li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="https://github.com/G-Pujitha1102" target="_blank" rel="noopener noreferrer">GitHub</a></li>
   </ul>
 </section>
 
