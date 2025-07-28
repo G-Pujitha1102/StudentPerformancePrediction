@@ -6,8 +6,8 @@ This project analyzes and predicts student performance using R. It uses the *Stu
 
 ## 📁 Files
 
-- StudentPerformance.csv — Dataset from Kaggle.
-- StudentPerformance.R — Complete R script for data analysis and modeling.
+- StudentsPerformance.csv — Dataset from Kaggle.
+- modeling.R — Complete R script for data analysis, visualization, and modeling.
 - README.md — Project documentation.
 
 ---
@@ -17,8 +17,11 @@ This project analyzes and predicts student performance using R. It uses the *Stu
 - Load and preprocess the dataset.
 - Perform Exploratory Data Analysis (EDA).
 - Visualize patterns and insights across gender, parental education, and preparation.
-- Build a Linear Regression model to predict math scores.
-- Classify students into performance categories.
+- Build predictive models:
+  - **Linear Regression**
+  - **Decision Tree**
+  - **Random Forest**
+- Evaluate models using RMSE and R-squared metrics.
 - Identify underperforming students and those who may need help.
 - Plot actual vs predicted scores and analyze residuals.
 
@@ -27,11 +30,18 @@ This project analyzes and predicts student performance using R. It uses the *Stu
 ## 📌 Technologies Used
 
 - *Language:* R
-- *Libraries Used:*
-  - ggplot2
-  - dplyr
-  - readr
-  - tidyverse
+- *Libraries:*  
+  tidyverse, caret, ggplot2, corrplot, dplyr, reshape2, Metrics, rpart, randomForest
+
+---
+
+## 📊 Model Performance Comparison
+
+| Model            | RMSE   | R-squared |
+|------------------|--------|-----------|
+| Linear Regression| 5.88   | 0.87      |
+| Decision Tree     | 7.78   | 0.74      |
+| Random Forest     | 6.46   | 0.82      |
 
 ---
 
@@ -43,74 +53,38 @@ Histogram - Residuals<img width="502" height="475" alt="Screenshot " src="https:
 Scatter Plot - Reading vs Writing by Gender<img width="840" height="721" alt="scatterplot" src="https://github.com/user-attachments/assets/228cbcd4-74b4-482b-98d6-7581d201ed74" />
 Stacked Bar Plot - Lunch Type vs Performance<img width="883" height="711" alt="lunchvsperformance" src="https://github.com/user-attachments/assets/b52eb36f-171f-45dd-bacc-a80f92fcd40d" />
 Horizontal Bar Plot - Race vs Performance<img width="884" height="720" alt="horizontalbargraph" src="https://github.com/user-attachments/assets/c2a5e8f9-153e-4c8e-ad1a-514f0be6bca9" />
+RMSE Comparison - Bar Plot<img width="898" height="715" alt="RMSE" src="https://github.com/user-attachments/assets/da62e37a-7f3b-4573-8cfe-cf4dabbd7ad1" />
+R² Comparison - Bar Plot<img width="891" height="714" alt="R2" src="https://github.com/user-attachments/assets/310b8445-2ccd-43c7-9095-582b04ced935" />
+
 
 ## 🚀 How to Run
 
-1. *Clone the repository*
-   ```bash
-   git clone https://github.com/G-Pujitha1102/StudentPerformancePrediction.git
+1. Clone the repo:  
+   `git clone https://github.com/G-Pujitha1102/StudentPerformancePrediction.git`
 
-2. Open RStudio
-Load the file: StudentPerformance.R
+2. Open RStudio and load `modeling.R`.
 
-
-3. Run the script
-Execute line by line to see:
-
-📂 Data loading
-
-🧹 Cleaning
-
-📊 Visualization
-
-📈 Model training and evaluation
-
-🟨 Environmental panel showing students needing help
-
-
-
-
+3. Run the script to perform EDA, modeling, and visualizations step-by-step.
 
 ---
 
-🧠 Skills Demonstrated
+## 📎 Dataset Source
 
-✅ Data Cleaning & Preprocessing
-✅ Exploratory Data Analysis (EDA)
-✅ Data Visualization using ggplot2
-✅ Linear Regression Modeling
-✅ Error & Residual Analysis
-✅ Classification of Student Performance
-✅ Identifying Students Who Need Support
-
+[Students Performance Dataset on Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
 ---
 
-📎 Dataset Source
+## 🙋‍♀️ Author
 
-🔗 Kaggle: Students Performance Dataset
-
-
-
----
-
-🙋‍♀️ Author
-
-G. Pujitha
-🎓 B.Tech - Computer Science Engineering
-https://github.com/G-Pujitha1102
+G. Pujitha  
+🎓 B.Tech - Computer Science Engineering  
+[GitHub Profile](https://github.com/G-Pujitha1102)
 
 ---
 
-🔮 Future Work
+## 🔮 Future Improvements
 
-Add Decision Tree and Random Forest for improved predictions
-
-Add classification model (e.g., Pass/Fail, High/Low)
-
-Develop an R Shiny dashboard for real-time interaction
-
-Extend prediction to writing/reading scores
-
-Introduce clustering for student group analysis
-
+- Add interactive dashboard using R Shiny.
+- Explore classification models (Pass/Fail).
+- Add more advanced models like Gradient Boosting.
+- Expand analysis to writing and reading score predictions.
