@@ -1,29 +1,105 @@
+/* style.css */
+
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #f9f9f9;
+  margin: 20px auto;
+  max-width: 900px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
 }
+
 header {
-  background-color: #007acc;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #3f51b5;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #3f51b5;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #303f9f;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #3f51b5;
   color: white;
-  padding: 20px;
 }
-section {
-  padding: 20px;
+
+p strong {
+  color: #303f9f;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery figure {
+  width: 280px;
+  margin: 0;
   background: white;
-  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+  text-align: center;
 }
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+}
+
+code {
+  background-color: #e8e8e8;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.95em;
+}
+
 footer {
   text-align: center;
   margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  color: #888;
   font-size: 0.9em;
-}
-table {
-  border-collapse: collapse;
-  width: 80%;
-}
-table, th, td {
-  border: 1px solid #999;
-  padding: 10px;
 }
