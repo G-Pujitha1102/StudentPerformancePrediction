@@ -210,3 +210,5 @@ ggplot(metrics, aes(x = Model, y = R2, fill = Model)) +
   geom_bar(stat = "identity") +
   theme_minimal() +
   ggtitle("R² Comparison of Models")
+
+
