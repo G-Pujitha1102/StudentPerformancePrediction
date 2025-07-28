@@ -74,6 +74,17 @@ R² Comparison - Bar Plot<img width="891" height="714" alt="R2" src="https://git
 
 ---
 
+---
+
+## 💡 Challenges Faced & What I Learned
+
+- Handling missing or inconsistent data in R.
+- Understanding how different factors (gender, lunch, education) impact scores.
+- Learned how to visualize data effectively using `ggplot2`.
+- Faced difficulty resolving GitHub merge conflicts and learned version control through practice.
+- Understood the importance of model evaluation metrics like RMSE and R².
+
+
 ## 🙋‍♀️ Author
 
 G. Pujitha  
