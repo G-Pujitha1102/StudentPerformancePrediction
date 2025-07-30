@@ -109,6 +109,12 @@ R² Comparison - Bar Plot<img width="891" height="714" alt="R2" src="https://git
 - Understood the importance of model evaluation metrics like RMSE and R².
 
 
+## 🔗 Live Demo
+
+You can try the app here:  
+👉 [Student Performance Prediction App](https://g-pujitha.shinyapps.io/studentperformanceprediction/)
+
+
 
 ## 🙋‍♀️ Author
 
