@@ -7,7 +7,7 @@ library(caret)
 library(ggplot2)
 
 # Load data
-data <- read.csv("C:/Users/Dell/Downloads/StudentsPerformance.csv")
+data <- read.csv("StudentsPerformance.csv")
 
 # Data preprocessing
 data$parental.level.of.education <- as.factor(data$parental.level.of.education)

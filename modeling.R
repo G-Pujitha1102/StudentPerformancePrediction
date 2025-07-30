@@ -27,7 +27,7 @@ library(randomForest)
 # -------------------------------
 # 📂 Step 3: Load data
 # -------------------------------
-data <- read.csv("C:/Users/Dell/Downloads/StudentsPerformance.csv")
+data <- read.csv("StudentsPerformance.csv")
 
 cat("Number of rows: ", nrow(data), "\n")
 cat("Column names:\n")
